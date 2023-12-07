@@ -1,0 +1,127 @@
+.header{
+  display: flex;
+  height: 46px;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  top:0;
+  right: 0;
+  left: 0;
+  border-bottom:1px solid rgb(215, 213, 213);
+  z-index: 100;
+}
+.left-section{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.hamburger-icon{
+  height: 24px;
+  margin-right: 15px;
+}
+.youtube-logo-icon{
+  height: 23px;
+}
+.middle-section{
+  flex: 1;
+  margin-left: 40px;
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+}
+.search-icon{
+  height: 26px;
+}
+.search-voice-icon{
+  height: 26px;
+}
+.search-button{
+  border: 1px solid rgb(192, 192, 192);
+  margin-left:-1px;
+  height: 38px;
+  width: 65px;
+  background-color:rgb(245,245, 245);
+  margin-right: 15px;
+ border-radius: 1px;
+}
+.search-button,.search-voice-button,.upload-container,.youtube-apps-icon-container,.notification-icon-container{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.search-button .tooltip,.search-voice-button .tooltip,.upload-container .tooltip,.youtube-apps-icon-container .tooltip,.notification-icon-container .tooltip{
+position: absolute;
+font-size: 13px;
+background-color: lightgray;
+padding: 2px;
+margin-bottom: -60px;
+opacity: 0;
+border-radius: 2px;
+white-space: nowrap;
+
+pointer-events: none;
+}
+.search-button:hover .tooltip,.search-voice-button:hover .tooltip,.upload-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,.notification-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+
+.search-voice-button{
+  height:34px;
+  width: 38px;
+  border: 1px solid rgb(196, 196, 196);
+  background-color:rgb(245,245, 245);
+  border-radius: 50%;
+  border: none;
+}
+.search-bar{
+flex: 1;
+border: 1px solid rgb(196, 196, 196);
+height: 34px;
+border-radius: 2px;
+padding-left: 10px;
+box-shadow:inset 1px 2px 4px rgba(0,0,0,0.15);
+width: 0;
+}
+
+.search-bar::placeholder{
+  font-size: 15px;
+  font-family: Roboto,Arial;
+}
+
+.right-section{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.upload-icon{
+  height: 27px;
+}
+.youtube-apps-icon{
+  height: 27px;
+}
+.notification-icon{
+  height: 27px;
+}
+
+.notification-count{
+  position: absolute;
+  background-color: rgb(186, 9, 9);
+  color: white;
+  padding:2px 5px;
+  font-size: 12px;
+  top:-4px;
+  right:-5px;
+  border-radius:55px;
+}
+.current-user-picture{
+  height: 30px;
+  border-radius: 15px;
+}
